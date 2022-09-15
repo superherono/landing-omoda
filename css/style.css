@@ -649,8 +649,6 @@ h6 {
 .fixed-button {
   position: fixed;
   z-index: 999;
-  bottom: 40px;
-  left: 22px;
 }
 
 @media (min-width: 29.99875em) {
@@ -720,6 +718,11 @@ h6 {
 @media (min-width: 47.99875em) {
   .button {
     padding: 15px 40px;
+  }
+
+  .fixed-button {
+    bottom: 80px;
+    left: 60px;
   }
 }
 
@@ -915,6 +918,11 @@ h6 {
     -webkit-transition: height 0.2s;
     -o-transition: height 0.2s;
     transition: height 0.2s;
+  }
+
+  .fixed-button {
+    bottom: 24px;
+    left: 24px;
   }
 }
 
