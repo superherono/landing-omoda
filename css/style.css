@@ -322,6 +322,31 @@ h6 {
   color: var(--black);
 }
 
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 60px;
+  -webkit-transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s;
+  transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+.button--blue {
+  background-color: #00B5FF;
+  border: 2px solid transparent;
+}
+
 .text-elipsis {
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -621,6 +646,13 @@ h6 {
   transition: background-color 0.3s ease 0s;
 }
 
+.fixed-button {
+  position: fixed;
+  z-index: 999;
+  bottom: 40px;
+  left: 22px;
+}
+
 @media (min-width: 29.99875em) {
   :root {
     --main-offsize: 1rem;
@@ -682,6 +714,12 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 47.99875em) {
+  .button {
+    padding: 15px 40px;
   }
 }
 
@@ -925,6 +963,10 @@ h6 {
     right: 50%;
   }
 
+  .button {
+    padding: 10px 20px;
+  }
+
   .header__body {
     padding: 0.9375rem 0;
   }
@@ -999,6 +1041,10 @@ h6 {
 @media (any-hover: hover) {
   .fp-bullets .fp-bullet:hover {
     opacity: 1;
+  }
+
+  .button--blue:hover {
+    border-color: var(--white);
   }
 
   .menu__link:hover {
