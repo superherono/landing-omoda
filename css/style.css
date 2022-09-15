@@ -433,7 +433,9 @@ h6 {
 .menu__link {
   position: relative;
   white-space: nowrap;
-  color: var(--blue-add);
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .icon-menu {
@@ -997,6 +999,10 @@ h6 {
 @media (any-hover: hover) {
   .fp-bullets .fp-bullet:hover {
     opacity: 1;
+  }
+
+  .menu__link:hover {
+    color: #00b5ff;
   }
 
   .follow__link--tg:hover {
