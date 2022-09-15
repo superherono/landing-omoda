@@ -34,6 +34,9 @@
             return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
         }
     };
+    function addTouchClass() {
+        if (isMobile.any()) document.documentElement.classList.add("touch");
+    }
     function fullVHfix() {
         const fullScreens = document.querySelectorAll("[data-fullscreen]");
         if (fullScreens.length && isMobile.any()) {
@@ -457,6 +460,7 @@
     if (document.querySelector("[data-fp]")) modules_flsModules.fullpage = new FullPage(document.querySelector("[data-fp]"), "");
     window["FLS"] = true;
     isWebp();
+    addTouchClass();
     menuInit();
     fullVHfix();
 })();
