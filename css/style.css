@@ -273,10 +273,6 @@ h6 {
   min-height: 100vh;
 }
 
-.touch [data-fullscreen] {
-  min-height: calc(var(--vh, 1vh) * 100);
-}
-
 [class*=-ibg] {
   position: relative;
 }
@@ -909,12 +905,6 @@ h6 {
 
 @media (max-width: 47.99875em) {
   .touch [data-fp] {
-    -webkit-transition: height 0.2s;
-    -o-transition: height 0.2s;
-    transition: height 0.2s;
-  }
-
-  .touch [data-fullscreen] {
     -webkit-transition: height 0.2s;
     -o-transition: height 0.2s;
     transition: height 0.2s;
