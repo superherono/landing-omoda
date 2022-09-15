@@ -273,6 +273,10 @@ h6 {
   min-height: 100vh;
 }
 
+.touch [data-fullscreen] {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -910,6 +914,12 @@ h6 {
     transition: height 0.2s;
   }
 
+  .touch [data-fullscreen] {
+    -webkit-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    transition: height 0.2s;
+  }
+
   .fixed-button {
     bottom: 24px;
     right: 24px;
@@ -969,6 +979,10 @@ h6 {
     padding: 0.9375rem 0;
   }
 
+  .about__title {
+    font-size: 21px;
+  }
+
   .about__descr {
     margin: 0 0 1.25rem 0;
   }
@@ -991,12 +1005,6 @@ h6 {
 
   .follow__text {
     font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 24.0625em) {
-  .about__title {
-    font-size: 1.375rem;
   }
 }
 
