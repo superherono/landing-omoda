@@ -487,9 +487,31 @@ h6 {
 }
 
 .welcome__title {
+  position: relative;
   font-family: Druk;
   color: var(--white);
   line-height: 120%;
+}
+
+.welcome__title:before,
+.welcome__title::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  left: 50%;
+  background-color: var(--white);
+}
+
+.welcome__title::after {
+  -webkit-transform: translate(0, 100%);
+      -ms-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+
+.welcome__title::before {
+  -webkit-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }
 
 .welcome__title span {
@@ -659,6 +681,19 @@ h6 {
 
   .header__body {
     padding: 1.875rem 0;
+  }
+
+  .welcome__title:before,
+  .welcome__title::after {
+    height: 100px;
+  }
+
+  .welcome__title::after {
+    bottom: -111.1111111111%;
+  }
+
+  .welcome__title::before {
+    top: -111.1111111111%;
   }
 
   .follow__logo {
@@ -920,6 +955,10 @@ h6 {
     transition: height 0.2s;
   }
 
+  .button {
+    padding: 10px 20px;
+  }
+
   .fixed-button {
     bottom: 24px;
     right: 24px;
@@ -971,16 +1010,28 @@ h6 {
     right: 50%;
   }
 
-  .button {
-    padding: 10px 20px;
-  }
-
   .header__body {
     padding: 0.9375rem 0;
   }
 
   .welcome__title {
-    font-size: 21px;
+    font-size: 40px;
+    -webkit-transform: translate(0, -80px);
+        -ms-transform: translate(0, -80px);
+            transform: translate(0, -80px);
+  }
+
+  .welcome__title:before,
+  .welcome__title::after {
+    height: 60px;
+  }
+
+  .welcome__title::after {
+    bottom: -37.037037037%;
+  }
+
+  .welcome__title::before {
+    top: -37.037037037%;
   }
 
   .about__descr {
