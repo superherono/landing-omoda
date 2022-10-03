@@ -587,15 +587,22 @@ textarea.input {
   padding: 0 20px;
 }
 
+.menu__item:first-child {
+  padding: 0;
+}
+
+.menu__item:first-child a {
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+}
+
 .menu__link {
   display: block;
   position: relative;
-  padding: 10px;
   white-space: nowrap;
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
-  border: 1px solid var(--accent-color);
 }
 
 .icon-menu {
@@ -723,6 +730,10 @@ textarea.input {
   font-weight: 700;
 }
 
+.about__row {
+  margin: 0 0 1.25rem 0;
+}
+
 .where-about {
   position: relative;
   line-height: 1.3888888889;
@@ -843,7 +854,6 @@ textarea.input {
 }
 
 .go-ahead {
-  display: none;
   text-align: center;
   cursor: pointer;
   color: var(--accent-color);
@@ -995,6 +1005,7 @@ textarea.input {
 
 .form__body {
   max-width: 32.5rem;
+  margin: 0 0 3.75rem 0;
 }
 
 .form__button {
@@ -1046,6 +1057,7 @@ textarea.input {
 }
 
 .video {
+  display: block;
   margin: 0px auto;
   aspect-ratio: 750/400;
 }
@@ -1065,7 +1077,7 @@ textarea.input {
   }
 
   .header__body {
-    padding: 1.875rem 0;
+    padding: 1.46875rem 0;
   }
 
   .welcome {
@@ -1132,7 +1144,7 @@ textarea.input {
   }
 
   .form {
-    padding: 6.25rem 0 1.25rem;
+    padding: 6.25rem 0 2.5rem;
   }
 
   .form__descr {

@@ -3744,6 +3744,14 @@
                 if (document.documentElement.classList.contains("menu-open")) menuClose();
                 let blockId = Number(menuItem.dataset.id);
                 console.log(blockId);
+                if (!menuItem.classList.contains("menu__item--target-blank")) modules_flsModules.fullpage.switchingSection(blockId);
+            }));
+        }));
+        const gotoItems = document.querySelectorAll(".go-ahead__decor");
+        gotoItems.forEach((gotoItem => {
+            gotoItem.addEventListener("click", (function(e) {
+                let blockId = Number(gotoItem.dataset.id);
+                console.log(blockId);
                 modules_flsModules.fullpage.switchingSection(blockId);
             }));
         }));
