@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220916221122">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221003131222">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,59 +14,133 @@
 
 <body>
 	<div class="wrapper">
-		<!-- <header class="header">
-	<div class="header__container">
-		<div class="header__body">
-			<div class="header__menu menu">
-				<button type="button" class="menu__icon icon-menu"><span></span></button>
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">О мероприятии</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Рассписание</a></li>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" data-goto="#about" class="menu__link">О мероприятии</a></li>
+								<!-- <li class="menu__item"><a href="" class="menu__link">Рассписание</a></li>
 						<li class="menu__item"><a href="" class="menu__link">Конкурс</a></li>
 						<li class="menu__item"><a href="" class="menu__link">O-PARTY</a></li>
 						<li class="menu__item"><a href="" class="menu__link">ONLINE</a></li>
 						<li class="menu__item"><a href="" class="menu__link">ECO проект</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Партнеры</a></li>
-					</ul>
-				</nav>
+						<li class="menu__item"><a href="" class="menu__link">Партнеры</a></li> -->
+							</ul>
+						</nav>
+					</div>
+					<a href="#" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				</div>
 			</div>
-			<a href="#" class="header__logo"><img src="img/logo.svg" alt=""></a>
-		</div>
-	</div>
-</header> -->
-		<main class="page" data-fp>
-			<section data-fp-section class="page__welcome welcome" data-fullscreen>
+		</header>
+		<main class="page">
+			<section class="page__welcome welcome" data-fullscreen>
 				<h2 class="welcome__title title">WELCOME <span>O-BOARD!</span></h2>
 			</section>
 			<!-- /.welcome -->
 
-			<section data-fp-section class="page__about about">
+			<section class="page__about about" id="about">
 				<div class="about__container">
 
-					<div class="about__body" data-fullscreen>
-						<h2 class="about__title title">О мероприятии</h2>
-						<p class="about__descr">Приветствуем тебя, исследователь!
-							Ищешь что-то новое и уникальное?</p>
-						<p class="about__info">Пристегни ремни: тебя ждёт невероятное путешествие в новую вселенную O-Universe.
-							OMODA C5 - настоящий космический корабль, который распахивает свои двери для всех, кто хочет исследовать удивительный мир технологий, искусства и дизайна будущего.
-							<span>WELCOME O-BOARD!</span>
-						</p>
-						<div class="about__where">
-							<p>4 октября 2022 года | 18:30</p>
-							<p>Пространство «Суперметалл»</p>
-							<p>Москва, 2-я Бауманская ул., 9/23с3</p>
+					<div class="about__body">
+						<h2 class="about__title title">Приветствуем вас, исследователь! <br>
+							Ищите что-то новое и уникальное?</h2>
+						<p class="about__info">Пристегните ремни: вас ждёт невероятное путешествие в новую вселенную O-Universe.
+							OMODA C5 - настоящий космический корабль, который распахивает свои двери для всех, кто хочет исследовать удивительный мир технологий, искусства и дизайна будущего.</p>
+						<div class="about__row">
+							<div class="about__where where-about">
+								<h3 class="where-about__caption">Онлайн премьера состоится</h3>
+								<p class="where-about__text">11 октября 2022 года <span>|</span> 18:30</p>
+							</div>
+							<div class="about__timer timer-about">
+								<h3 class="timer-about__label">welcome o-board!</h3>
+								<div class="timer-about__inner">
+									<h3 class="timer-about__caption">До начала премьеры осталось:</h3>
+									<div class="timer-about__data">
+										<div class="timer-about__item">
+											<div class="timer-about__digits timer-about__digits--day">11</div>
+											<p class="timer-about__text">дней</p>
+										</div>
+										<div class="timer-about__item">
+											<div class="timer-about__digits timer-about__digits--hours">15</div>
+											<p class="timer-about__text">часов</p>
+										</div>
+										<div class="timer-about__item">
+											<div class="timer-about__digits timer-about__digits--minutes">35</div>
+											<p class="timer-about__text">минут</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about__go-ahead go-ahead">
+							<p class="go-ahead__text">Оставьте свои данные для получения новостей <br>
+								и переходите <span>смотреть онлайн премьеру</span></p>
+							<div class="go-ahead__decor" data-goto="#form">
+								<svg width="50" height="50">
+									<use xlink:href="img/icons/icons.svg#svg-go-ahead"></use>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- /.about -->
 
-			<section data-fp-section class="page__follow follow">
+			<section class="page__form form" id="form">
+				<div class="form__container">
+					<p class="form__descr">Оставьте информацию о себе и получайте самую свежую информацию <span>о премьере OMODA С5</span>, новостях бренда и специальных предложениях!</p>
+					<form action="#" class="form__body">
+						<div class="form__row">
+							<input autocomplete="off" type="text" name="form[]" placeholder="ФИО *" class="input">
+						</div>
+						<div class="form__row">
+							<input autocomplete="off" type="text" name="form[]" placeholder="E-mail *" class="input">
+						</div>
+						<div class="form__row">
+							<input autocomplete="off" type="text" name="form[]" placeholder="+7 (---) --- -- -- *" class="input js-phone">
+						</div>
+						<div class="form__row">
+							<div class="checkbox">
+								<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">
+										Я соглашаюсь с правилами <a href="#">политики конфиденциальности</a>
+									</span></label>
+							</div>
+						</div>
+						<button type="submit" class="form__button">оставить данные</button>
+					</form>
+					<div class="form__go-ahead go-ahead">
+						<p class="go-ahead__text">Перейти к онлайн премьере</p>
+						<div class="go-ahead__decor" data-goto="#video">
+							<svg width="50" height="50">
+								<use xlink:href="img/icons/icons.svg#svg-go-ahead"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.form -->
+
+			<section class="page__premiere premiere" id="video">
+				<div class="premiere__container">
+					<h2 class="premiere__title title">онлайн премьера <br>
+						omoda c5</h2>
+					<div class="premiere__body video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/wZQhD17Yfw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<a href="#" class="premiere__button">Станьте одним из первых обладателей OMODA C5 на уникальных условиях</a>
+				</div>
+			</section>
+			<!-- /.premiere -->
+
+
+
+			<section class="page__follow follow">
 				<div class="follow__container">
-					<div class="follow__body" data-fullscreen>
-						<h2 class="follow__title title title--black">Следите&nbsp;за <br>
-							обновлениями</h2>
+					<div class="follow__body">
 
 						<div class="follow__bottom">
 							<div class="follow__info">
@@ -126,7 +200,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220916221122"></script>
+	<script src="js/app.min.js?_v=20221003131222"></script>
 </body>
 
 </html>
