@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221003131222">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221003180815">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,10 @@
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" data-goto="#about" class="menu__link">О мероприятии</a></li>
-								<!-- <li class="menu__item"><a href="" class="menu__link">Рассписание</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Конкурс</a></li>
-						<li class="menu__item"><a href="" class="menu__link">O-PARTY</a></li>
+								<li class="menu__item" data-id="1"><a href="#" class="menu__link">О мероприятии</a></li>
+								<li class="menu__item" data-id="3"><a href="#" class="menu__link">Онлайн премьера</a></li>
+								<li class="menu__item menu__item--target-blank"><a href="https://omoda.ru/brand/" target="_blank" class="menu__link">О бренде OMODA</a></li>
+								<!-- <li class="menu__item"><a href="" class="menu__link">O-PARTY</a></li>
 						<li class="menu__item"><a href="" class="menu__link">ONLINE</a></li>
 						<li class="menu__item"><a href="" class="menu__link">ECO проект</a></li>
 						<li class="menu__item"><a href="" class="menu__link">Партнеры</a></li> -->
@@ -35,13 +35,13 @@
 				</div>
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__welcome welcome" data-fullscreen>
+		<main class="page" data-fp>
+			<section class="page__welcome welcome" data-fullscreen data-fp-section>
 				<h2 class="welcome__title title">WELCOME <span>O-BOARD!</span></h2>
 			</section>
 			<!-- /.welcome -->
 
-			<section class="page__about about" id="about">
+			<section class="page__about about" id="about" data-fp-section>
 				<div class="about__container">
 
 					<div class="about__body">
@@ -89,7 +89,7 @@
 			</section>
 			<!-- /.about -->
 
-			<section class="page__form form" id="form">
+			<section class="page__form form" id="form" data-fp-section>
 				<div class="form__container">
 					<p class="form__descr">Оставьте информацию о себе и получайте самую свежую информацию <span>о премьере OMODA С5</span>, новостях бренда и специальных предложениях!</p>
 					<form action="#" class="form__body">
@@ -124,61 +124,65 @@
 			</section>
 			<!-- /.form -->
 
-			<section class="page__premiere premiere" id="video">
+			<section class="page__premiere premiere" id="video" data-fp-section>
 				<div class="premiere__container">
-					<h2 class="premiere__title title">онлайн премьера <br>
+					<h2 class="premiere__title title">онлайн премьера
 						omoda c5</h2>
-					<div class="premiere__body video">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/wZQhD17Yfw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="premiere__body-ibg video">
+
+						<picture><source srcset="img/z1.webp" type="image/webp"><img src="img/z1.jpg" alt=""></picture>
+
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/wZQhD17Yfw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 					</div>
 					<a href="#" class="premiere__button">Станьте одним из первых обладателей OMODA C5 на уникальных условиях</a>
+				</div>
+				<div class="page__follow follow">
+					<div class="follow__container">
+						<div class="follow__body">
+
+							<div class="follow__bottom">
+								<div class="follow__info">
+									<div class="follow__logo">
+										<img src="img/logo.svg" alt="">
+									</div>
+									<p class="follow__text">© 2022 АО «ЧЕРИ АВТОМОБИЛИ РУС»</p>
+								</div>
+								<ul class="follow__social">
+									<li class="follow__item">
+										<a href="https://t.me/omodarussia" target="_blank" class="follow__link follow__link--tg">
+											<svg width="18" height="18">
+												<use xlink:href="img/icons/icons.svg#svg-tg"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="follow__item">
+										<a href="https://vk.com/omodarussia" target="_blank" class="follow__link follow__link--vk">
+											<svg width="20" height="12">
+												<use xlink:href="img/icons/icons.svg#svg-vk"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="follow__item">
+										<a href="https://ok.ru/omodarussia" target="_blank" class="follow__link follow__link--ok">
+											<svg width="12" height="20">
+												<use xlink:href="img/icons/icons.svg#svg-ok"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- /.premiere -->
 
 
 
-			<section class="page__follow follow">
-				<div class="follow__container">
-					<div class="follow__body">
 
-						<div class="follow__bottom">
-							<div class="follow__info">
-								<div class="follow__logo">
-									<img src="img/logo.svg" alt="">
-								</div>
-								<p class="follow__text">© 2022 АО «ЧЕРИ АВТОМОБИЛИ РУС»</p>
-							</div>
-							<ul class="follow__social">
-								<li class="follow__item">
-									<a href="https://t.me/omodarussia" target="_blank" class="follow__link follow__link--tg">
-										<svg width="18" height="18">
-											<use xlink:href="img/icons/icons.svg#svg-tg"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="follow__item">
-									<a href="https://vk.com/omodarussia" target="_blank" class="follow__link follow__link--vk">
-										<svg width="20" height="12">
-											<use xlink:href="img/icons/icons.svg#svg-vk"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="follow__item">
-									<a href="https://ok.ru/omodarussia" target="_blank" class="follow__link follow__link--ok">
-										<svg width="12" height="20">
-											<use xlink:href="img/icons/icons.svg#svg-ok"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-			</section>
 			<!-- /.follow -->
-			<a href="https://omoda.ru" target="_blank" class="fixed-button button button--blue">О бренде</a>
+			<!-- <a href="https://omoda.ru" target="_blank" class="fixed-button button button--blue">О бренде</a> -->
 
 		</main>
 		<footer class="footer">
@@ -200,7 +204,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221003131222"></script>
+	<script src="js/app.min.js?_v=20221003180815"></script>
 </body>
 
 </html>

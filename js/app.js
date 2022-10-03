@@ -3737,6 +3737,16 @@
             }
         }
         if (document.querySelector("[data-fp]")) modules_flsModules.fullpage = new FullPage(document.querySelector("[data-fp]"), "");
+        console.log(modules_flsModules.fullpage);
+        const menuItems = document.querySelectorAll(".menu__item");
+        menuItems.forEach((menuItem => {
+            menuItem.addEventListener("click", (function(e) {
+                if (document.documentElement.classList.contains("menu-open")) menuClose();
+                let blockId = Number(menuItem.dataset.id);
+                console.log(blockId);
+                modules_flsModules.fullpage.switchingSection(blockId);
+            }));
+        }));
         const minute = 1e3 * 60, hour = 60 * minute, day = 24 * hour;
         const dayBlock = document.querySelector(".timer-about__digits--day");
         const hoursBlock = document.querySelector(".timer-about__digits--hours");
