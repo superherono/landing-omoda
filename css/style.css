@@ -587,11 +587,11 @@ textarea.input {
   padding: 0 20px;
 }
 
-.menu__item:first-child {
+.menu__item:nth-child(2) {
   padding: 0;
 }
 
-.menu__item:first-child a {
+.menu__item:nth-child(2) a {
   padding: 10px;
   border: 1px solid var(--accent-color);
 }
