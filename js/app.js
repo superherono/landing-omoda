@@ -3875,7 +3875,7 @@
             getRemaningTime();
         }), 1e3 * 60);
         getRemaningTime();
-        window["FLS"] = true;
+        window["FLS"] = false;
         isWebp();
         addTouchClass();
         menuInit();

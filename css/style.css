@@ -472,17 +472,6 @@ textarea.input {
   border: 2px solid transparent;
 }
 
-.text-elipsis {
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  /* number of lines to show */
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -495,53 +484,6 @@ textarea.input {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.swiper-button-lock {
-  display: none;
-}
-
-.swiper-button-disabled {
-  opacity: 0.2;
-  cursor: auto;
-}
-
-.swiper-pagination-bullets:not(.swiper-pagination-lock) {
-  margin: 1.5625rem 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.swiper-pagination-bullets:not(.swiper-pagination-lock).industries__controls span {
-  background-color: rgba(7, 5, 70, 0.2);
-}
-
-.swiper-pagination-bullets:not(.swiper-pagination-lock) span {
-  width: 10px;
-  height: 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 10px;
-          flex: 0 0 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  -webkit-transition: background-color 0.3s ease 0s;
-  -o-transition: background-color 0.3s ease 0s;
-  transition: background-color 0.3s ease 0s;
-}
-
-.swiper-pagination-bullets:not(.swiper-pagination-lock) span:not(:last-child) {
-  margin: 0 0.625rem 0 0;
-}
-
-.swiper-pagination-bullets:not(.swiper-pagination-lock) span.swiper-pagination-bullet-active {
-  background-color: var(--add-color);
 }
 
 .header {
@@ -1031,15 +973,10 @@ textarea.input {
   width: calc(100% - 30px);
 }
 
-.premiere__body {
-  max-width: 72.5rem;
-  margin: 0px auto 2.5rem;
-}
-
 .premiere__button {
   display: block;
   max-width: 39.375rem;
-  margin: 0px auto;
+  margin: 2.5rem auto 1.25rem;
   border: 1px solid #fff;
   text-align: center;
   line-height: 120%;
@@ -1047,7 +984,6 @@ textarea.input {
   -webkit-transition: border-color 0.3s ease 0s;
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
-  display: none;
 }
 
 .video {
