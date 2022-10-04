@@ -1451,6 +1451,11 @@ textarea.input {
     padding: 5rem 0 2.5rem;
   }
 
+  .about__title {
+    font-size: 18px;
+    margin: 0 0 0.625rem 0;
+  }
+
   .about__descr {
     margin: 0 0 1.25rem 0;
   }
@@ -1574,13 +1579,6 @@ textarea.input {
 
   .premiere__button {
     padding: 15px;
-  }
-}
-
-@media (max-width: 25.625em) {
-  .about__title {
-    font-size: 18px;
-    margin: 0 0 0.625rem 0;
   }
 }
 
