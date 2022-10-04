@@ -1577,9 +1577,8 @@ textarea.input {
   }
 }
 
-@media (max-width: 24.0625em) {
+@media (max-width: 25.625em) {
   .about__title {
-    font-size: 1.375rem;
     font-size: 18px;
     margin: 0 0 0.625rem 0;
   }
