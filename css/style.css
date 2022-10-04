@@ -17,25 +17,25 @@
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: NotoSans;
   font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: NotoSans;
   font-display: swap;
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  src: url("../fonts/NotoSans-Light.woff2") format("woff2"), url("../fonts/NotoSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: NotoSans;
   font-display: swap;
-  src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff");
+  src: url("../fonts/NotoSans-Thin.woff2") format("woff2"), url("../fonts/NotoSans-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
@@ -62,7 +62,7 @@ body {
 body {
   color: var(--main-color);
   line-height: 1;
-  font-family: "Roboto";
+  font-family: "NotoSans";
   font-size: var(--main-offsize);
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -74,7 +74,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Roboto";
+  font-family: "NotoSans";
   font-size: inherit;
 }
 
