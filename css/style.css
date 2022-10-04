@@ -568,6 +568,7 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10px 0;
   font-size: max(38px, 4.6875vw);
   letter-spacing: 0.05em;
   text-align: center;
@@ -722,25 +723,6 @@ textarea.input {
 
 .where-about__text span {
   font-weight: 300;
-}
-
-.timer-about__label {
-  margin: 0 0 1.875rem 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-}
-
-@supports (font-size: clamp( 1.5rem , 1.2534602076rem  +  0.830449827vw , 2.25rem )) {
-  .timer-about__label {
-    font-size: clamp( 1.5rem , 1.2534602076rem  +  0.830449827vw , 2.25rem );
-  }
-}
-
-@supports not (font-size: clamp( 1.5rem , 1.2534602076rem  +  0.830449827vw , 2.25rem )) {
-  .timer-about__label {
-    font-size: calc(1.5rem + 0.75 * (100vw - 29.6875rem) / 90.3125);
-  }
 }
 
 .timer-about__inner {
@@ -1010,10 +992,6 @@ textarea.input {
     padding: 1.46875rem 0;
   }
 
-  .welcome {
-    padding: 12.5rem 10px 0;
-  }
-
   .welcome__title:before,
   .welcome__title::after {
     height: 100px;
@@ -1034,6 +1012,25 @@ textarea.input {
   .where-about {
     padding: 2.5rem 0;
   }
+
+  .timer-about__label {
+    margin: 0 0 1.875rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+
+@supports (font-size: clamp( 1.5rem , 1.2534602076rem  +  0.830449827vw , 2.25rem )) {
+    .timer-about__label {
+      font-size: clamp( 1.5rem , 1.2534602076rem  +  0.830449827vw , 2.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.2534602076rem  +  0.830449827vw , 2.25rem )) {
+    .timer-about__label {
+      font-size: calc(1.5rem + 0.75 * (100vw - 29.6875rem) / 90.3125);
+    }
+}
 
   .timer-about__inner {
     padding: 1.25rem 4.6875rem;
@@ -1350,7 +1347,7 @@ textarea.input {
 
 @media (max-width: 61.99875em) {
   .about__where {
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 1.25rem 0;
   }
 
   .about__timer {
@@ -1426,10 +1423,6 @@ textarea.input {
     padding: 0.9375rem 0;
   }
 
-  .welcome {
-    padding: 6.25rem 10px 0;
-  }
-
   .welcome__title {
     font-size: 40px;
   }
@@ -1463,13 +1456,22 @@ textarea.input {
   .about__info {
     margin: 0 0 1.25rem 0;
     font-size: 1rem;
+    line-height: 1;
     margin: 0 0 0.625rem 0;
+  }
+
+  .about__row {
+    margin-bottom: 0.625rem;
   }
 
   .where-about {
     padding: 1.25rem 0;
     padding: 10px 0;
     font-size: 1.25rem;
+  }
+
+  .timer-about__label {
+    display: none;
   }
 
   .timer-about__inner {
