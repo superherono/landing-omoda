@@ -1475,7 +1475,7 @@ textarea.input {
   }
 
   .timer-about__inner {
-    padding: 1.25rem 2.5rem;
+    padding: 0.9375rem 2.5rem;
   }
 
   .timer-about__caption {
@@ -1489,7 +1489,7 @@ textarea.input {
   }
 
   .timer-about__digits {
-    font-size: 2rem;
+    font-size: 1.625rem;
   }
 
   .timer-about__text {
@@ -1504,6 +1504,11 @@ textarea.input {
   .go-ahead__decor::before,
   .go-ahead__decor::after {
     width: 100px;
+  }
+
+  .go-ahead__decor svg {
+    width: 40px;
+    height: 40px;
   }
 
   .follow__info {
