@@ -7,7 +7,7 @@
 	<meta name="description" content="Онлайн премьера нового футуристичного фастбэк-кроссовер OMODA C5">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221004141911">
+	<link rel="stylesheet" href="css/style.css?_v=20221004160604">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,13 @@
 		</header>
 		<main class="page" data-fp>
 			<section class="page__welcome welcome" data-fullscreen data-fp-section>
-				<h2 class="welcome__title title">WELCOME <span>O-BOARD!</span></h2>
+				<div class="welcome__body">
+					<h2 class="welcome__title title">WELCOME <span>O-BOARD!</span></h2>
+					<div class="premier__info">
+						<a href="#" class="premiere__online-button button button--blue">Онлайн бронирование</a>
+						<a href="#" class="premiere__button">Станьте одним из первых обладателей OMODA C5 на уникальных условиях</a>
+					</div>
+				</div>
 			</section>
 			<!-- /.welcome -->
 
@@ -77,8 +83,7 @@
 							</div>
 						</div>
 						<div class="about__go-ahead go-ahead">
-							<p class="go-ahead__text">Оставьте свои данные для получения новостей <br>
-								и переходите <span>смотреть онлайн премьеру</span></p>
+							<p class="go-ahead__text">Переходи смотреть онлайн премьеру</p>
 							<div class="go-ahead__decor" data-id="2">
 								<svg width="50" height="50">
 									<use xlink:href="img/icons/icons.svg#svg-go-ahead"></use>
@@ -89,6 +94,22 @@
 				</div>
 			</section>
 			<!-- /.about -->
+
+			<section class="page__premiere premiere" id="video" data-fp-section>
+				<div class="premiere__container">
+					<h2 class="premiere__title title">онлайн премьера
+						omoda c5</h2>
+					<a href="https://www.youtube.com/channel/UCW8pc1AaJuqZ0dav0j1A-yQ/featured" target="_blank" class="premiere__body-ibg video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Dty2QJGcVZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</a>
+					<div class="premier__info">
+						<a href="#" class="premiere__online-button button button--blue">Онлайн бронирование</a>
+						<a href="#" class="premiere__button">Станьте одним из первых обладателей OMODA C5 на уникальных условиях</a>
+					</div>
+				</div>
+
+			</section>
+			<!-- /.premiere -->
 
 			<section class="page__form form" id="form" data-fp-section>
 				<div class="form__container">
@@ -113,26 +134,6 @@
 						</div>
 						<button type="submit" class="form__button">оставить данные</button>
 					</form>
-					<div class="form__go-ahead go-ahead">
-						<p class="go-ahead__text">Перейти к онлайн премьере</p>
-						<div class="go-ahead__decor" data-id="3">
-							<svg width="50" height="50">
-								<use xlink:href="img/icons/icons.svg#svg-go-ahead"></use>
-							</svg>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- /.form -->
-
-			<section class="page__premiere premiere" id="video" data-fp-section>
-				<div class="premiere__container">
-					<h2 class="premiere__title title">онлайн премьера
-						omoda c5</h2>
-					<a href="https://www.youtube.com/channel/UCW8pc1AaJuqZ0dav0j1A-yQ/featured" target="_blank" class="premiere__body-ibg video">
-						<picture><source srcset="img/z1.webp" type="image/webp"><img src="img/z1.jpg" alt=""></picture>
-					</a>
-					<!-- <a href="#" class="premiere__button">Станьте одним из первых обладателей OMODA C5 на уникальных условиях</a> -->
 				</div>
 				<div class="page__follow follow">
 					<div class="follow__container">
@@ -174,7 +175,9 @@
 					</div>
 				</div>
 			</section>
-			<!-- /.premiere -->
+			<!-- /.form -->
+
+
 
 			<!-- /.follow -->
 			<!-- <a href="https://omoda.ru" target="_blank" class="fixed-button button button--blue">О бренде</a> -->
@@ -199,7 +202,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221004141911"></script>
+	<script src="js/app.min.js?_v=20221004160604"></script>
 </body>
 
 </html>
