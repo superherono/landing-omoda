@@ -996,6 +996,13 @@ textarea.input {
 
 }
 
+.premiere__body-ibg {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 700px;
+  flex: 0 1 700px;
+}
+
+
 .premiere__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,8 +1013,6 @@ textarea.input {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 40.625rem;
-  margin: 1.25rem 0;
   border: 1px solid #fff;
   text-align: center;
   line-height: 120%;
@@ -1041,17 +1046,12 @@ textarea.input {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  max-width: 22.8125rem;
 
-  -webkit-transform: translateY(-50px);
-  -ms-transform: translateY(-50px);
-  transform: translateY(-50px);
 }
 
 
 .video {
   display: block;
-  margin: 0px auto;
   aspect-ratio: 750/400;
 }
 
@@ -1190,18 +1190,26 @@ textarea.input {
 
   .premiere__button {
     padding: 17px 32px;
+    max-width: 17.5rem;
+    margin: 1.25rem auto;
+  }
+
+  .premier__info {
+    max-width: 22.8125rem;
   }
 
   .premier__info--align-left {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    margin: 0 40px 0 0;
   }
 
   .premier__info--align-right {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    transform: translate(0, -50px);
   }
 }
 
@@ -1247,6 +1255,20 @@ textarea.input {
 @media (min-width: 47.99875em) {
   .button {
     padding: 15px 40px;
+  }
+
+  .premiere__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
 
@@ -1469,6 +1491,32 @@ textarea.input {
 
   .button {
     padding: 10px 20px;
+  }
+
+  .premiere__content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .video {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 210px;
+    flex: 0 1 210px;
+    margin: 0 0 40px 0;
+  }
+
+  .premiere__online-button {
+    width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -1697,6 +1745,7 @@ textarea.input {
     -ms-flex-align: center;
     align-items: center;
   }
+
 }
 
 @media (min-width: 29.99875em) and (max-width: 61.99875em) {
