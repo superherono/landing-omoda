@@ -1020,7 +1020,7 @@ textarea.input {
   -webkit-transition: border-color 0.3s ease 0s;
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
-  font-size: 1rem;
+  font-size: 20px;
   letter-spacing: normal;
 }
 
@@ -1196,7 +1196,7 @@ textarea.input {
   }
 
   .premier__info {
-    max-width: 400px;
+    max-width: 480px;
   }
 
   .premier__info--align-left {
