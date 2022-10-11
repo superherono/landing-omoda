@@ -542,7 +542,7 @@ textarea.input {
   padding: 0;
 }
 
-.menu__item:nth-child(2) a {
+.menu__item:nth-child(1) a {
   padding: 10px;
   border: 1px solid var(--accent-color);
 }
@@ -1048,6 +1048,10 @@ textarea.input {
   -ms-flex-pack: end;
   justify-content: flex-end;
 
+}
+
+.premier__info--align-right .premiere__button {
+  border: none;
 }
 
 
