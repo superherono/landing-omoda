@@ -1025,7 +1025,8 @@ textarea.input {
 }
 
 .premiere__online-button {
-  max-width: 17.5rem;
+  width: 100%;
+  /* max-width: 17.5rem; */
   line-height: 1.2;
   margin: 20px auto;
   white-space: nowrap;
@@ -1190,12 +1191,12 @@ textarea.input {
 
   .premiere__button {
     padding: 17px 32px;
-    max-width: 17.5rem;
+    /* max-width: 17.5rem; */
     margin: 1.25rem auto;
   }
 
   .premier__info {
-    max-width: 22.8125rem;
+    max-width: 400px;
   }
 
   .premier__info--align-left {
